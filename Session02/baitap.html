@@ -13,10 +13,119 @@
         width: 100px;
         height: auto;
     }
+    .textt {
+        text-align: center;
+    }
 </style>
 <body>
     <h1>Bai 1:</h1>
-    <table style="width: 100%;">
+    <table border="1">
+        <tr>
+            <th>STT</th>
+            <th>Ten</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Nguyen Van A</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Tran Thi B</td>
+        </tr>
+    </table>
+    <hr>
+    <h1>Bai 2:</h1>
+    <table>
+        <tr>
+            <th>STT</th>
+            <th>Ten</th>
+            <th>Tuoi</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Nguyen Van A</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Tran Thi B</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Le Thi C</td>
+            <td>22</td>
+        </tr>
+    </table>
+    <hr>
+    <h1>Bai 3:</h1>
+    <table>
+        <tr>
+            <th>STT</th>
+            <th>Ten</th>
+            <th>Tuoi</th>
+        </tr>
+        <tr>
+            <td class="textt">1</td>
+            <td class="textt">Nguyen Van A</td>
+            <td class="textt">25</td>
+        </tr>
+        <tr>
+            <td class="textt">2</td>
+            <td class="textt">Tran Thi B</td>
+            <td class="textt">30</td>
+        </tr>
+        <tr>
+            <td class="textt">3</td>
+            <td class="textt">Le Thi C</td>
+            <td class="textt">22</td>
+        </tr>
+    </table>
+    <hr>
+    <h1>Bai 4:</h1>
+    <table>
+        <tr>
+            <th>STT</th>
+            <th>Ten</th>
+            <th>Tuoi</th>
+        </tr>
+        <tr>
+            <td class="textt">1</td>
+            <td style="background-color: red;" class="textt">Nguyen Van A</td>
+            <td class="textt">25</td>
+        </tr>
+        <tr>
+            <td class="textt">2</td>
+            <td class="textt">Tran Thi B</td>
+            <td class="textt">30</td>
+        </tr>
+        <tr>
+            <td class="textt">3</td>
+            <td class="textt">Le Thi C</td>
+            <td class="textt"><mark>22</mark></td>
+        </tr>
+    </table>
+    <hr>
+    <h1>Bai 5:</h1>
+    <table>
+        <tr>
+            <th colspan="2">Thong tin ca nhan</th>
+        </tr>
+        <tr>
+            <td>Ho ten</td>
+            <td>Nguyen A</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Dia chi</td>
+            <td>Ha noi</td>
+        </tr>
+        <tr>
+            <td>Ho chi minh</td>
+        </tr>
+    </table>
+    <hr>
+    <h1>Bai 6:</h1>
+    <table>
         <tr>
             <th>STT</th>
             <th>NAME</th>
@@ -26,83 +135,35 @@
         </tr>
         <tr>
             <td>1</td>
-            <td>Nguyen Van A</td>
+            <td>Nguyễn Văn A</td>
             <td>18</td>
             <td>NguyenVanA@gmail.com</td>
-            <td>Hoat dong</td>
+            <td>Hoạt động</td>
         </tr>
         <tr>
             <td>2</td>
-            <td>Tran Van B</td>
+            <td>Trần Văn B</td>
             <td>23</td>
             <td>TranVanB@gmail.com</td>
-            <td>Hoat dong</td>
+            <td>Hoạt động</td>
         </tr>
         <tr>
             <td>3</td>
-            <td>Pham Thi C</td>
+            <td>Phạm Thị C</td>
             <td>19</td>
             <td>PhamThiC@gmail.com</td>
-            <td>Hoat dong</td>
+            <td>Hoạt động</td>
         </tr>
         <tr>
             <td>4</td>
-            <td>Phan Van D</td>
+            <td>Phan Văn D</td>
             <td>20</td>
             <td>PhanVanD@gmail.com</td>
-            <td>Khong hoat dong</td>
+            <td>Không hoạt động</td>
         </tr>
     </table>
     <hr>
-    <h1>Bai 2:</h1>
-    <table>
-            <tr>
-                <th>STT</th>
-                <th>NAME</th>
-                <th>AGE</th>
-                <th>EMAIL</th>
-                <th>STATUS</th>
-                <th colspan="2">ACTIONS</th> 
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Nguyễn Văn A</td>
-                <td>18</td>
-                <td>NguyenVanA@gmail.com</td>
-                <td>Hoạt động</td>
-                <td><button>SỬA</button></td>
-                <td><button>XÓA</button></td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Trần Văn B</td>
-                <td>23</td>
-                <td>TranVanB@gmail.com</td>
-                <td>Hoạt động</td>
-                <td><button>SỬA</button></td>
-                <td><button>XÓA</button></td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Phạm Thị C</td>
-                <td>19</td>
-                <td>PhamThiC@gmail.com</td>
-                <td>Hoạt động</td>
-                <td><button>SỬA</button></td>
-                <td><button>XÓA</button></td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>Phan Văn D</td>
-                <td>20</td>
-                <td>PhanVanD@gmail.com</td>
-                <td>Không hoạt động</td>
-                <td><button>SỬA</button></td>
-                <td><button>XÓA</button></td>
-            </tr>
-    </table>
-    <hr>
-    <h1>Bai 3:</h1>
+    <h1>Bai 7:</h1>
     <table>
         <tr>
             <th>STT</th>
@@ -111,6 +172,54 @@
             <th>EMAIL</th>
             <th>STATUS</th>
             <th colspan="2">ACTIONS</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Nguyễn Văn A</td>
+            <td>18</td>
+            <td>NguyenVanA@gmail.com</td>
+            <td>Hoạt động</td>
+            <td><button>SỬA</button></td>
+            <td><button>XÓA</button></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Trần Văn B</td>
+            <td>23</td>
+            <td>TranVanB@gmail.com</td>
+            <td>Hoạt động</td>
+            <td><button>SỬA</button></td>
+            <td><button>XÓA</button></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Phạm Thị C</td>
+            <td>19</td>
+            <td>PhamThiC@gmail.com</td>
+            <td>Hoạt động</td>
+            <td><button>SỬA</button></td>
+            <td><button>XÓA</button></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Phan Văn D</td>
+            <td>20</td>
+            <td>PhanVanD@gmail.com</td>
+            <td>Không hoạt động</td>
+            <td><button>SỬA</button></td>
+            <td><button>XÓA</button></td>
+        </tr>
+    </table>
+    <hr>
+    <h1>Bai 8:</h1>
+    <table>
+        <tr>
+            <th>STT</th>
+            <th>NAME</th>
+            <th>AGE</th>
+            <th>EMAIL</th>
+            <th>STATUS</th>
+            <th colspan="3">ACTIONS</th>
         </tr>
         <tr>
             <td>1</td>
@@ -151,79 +260,82 @@
         </tr>
     </table>
     <hr>
-    <h1>Bai 4:</h1>
+    <h1>Bai 9:</h1>
     <table>
         <tr>
-            <th>Breed</th>
-            <th>Location of origin</th>
-            <th>Type</th>
-            <th>Body type</th>
-            <th>Coat type and length</th>
-            <th>Coat pattern</th>
-            <th>Image</th>
+            <th>Item Photo</th>
+            <th>Name</th>
+            <th> Price</th>
         </tr>
         <tr>
-            <td><a href="#">Abyssinian<sup>[8]</sup></a></td>
-            <td>Unspecified, but somewhere in Afro-Asia, likely <a href="#">Ethiopia<sup>[9]</sup></a></td>
-            <td>Natural</td>
-            <td>Semi-foreign</td>
-            <td>Short</td>
-            <td>Ticked tabby</td>
-            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkUf5gXshuOhN9ZEod3f7TYGtEoSOzVbvE9g&s" alt=""></td>
+            <td><img src="https://lh6.googleusercontent.com/proxy/jwAYe7-Gc4WkLp_W-Qu0S5AKhwhHBWrVbuonNiKJVqaOlcmD8MDgpvCMIJfLi08AMlTSaeigUMjuzyl-Xw--FY5KBGT8NekFg9PuInffyuCGU3V5eXtvHR4" alt=""></td>
+            <td>Oranges</td>
+            <td>$1 ea.</td>
         </tr>
         <tr>
-            <td><a href="#">Aegean</a></td>
-            <td>Greece</td>
-            <td>Natural</td>
-            <td>Moderate</td>
-            <td>Semi-long</td>
-            <td>Multi-color</td>
-            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcBFZrh0DVmLbDoZ7H7JZAjGdsjA_eSG68UA&s" alt=""></td>
+            <td><img src="https://media.vov.vn/sites/default/files/styles/large/public/2023-12/2_qua_chuoi.jpg" alt=""></td>
+            <td>Bananas</td>
+            <td>$0.75/lb</td>
         </tr>
         <tr>
-            <td><a href="#">American Bobtail<sup>[10]</sup></a></td>
-            <td>United States<a href=""><sup>11</sup></a></td>
-            <td>Mutation of shortened tail</td>
-            <td>Cobby</td>
-            <td>Semi-long</td>
-            <td>All</td>
-            <td><img src="https://images.kienthuc.net.vn/zoom/800/Uploaded/quocquan/2023_01_05/Felis-nigripes-01_YKPU.jpg" alt=""></td>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9UKr6ahjppZ0VyM47HCN5STLHgkpkFcu-ag&s" alt=""></td>
+            <td>Pomegranates</td>
+            <td>3 for $5</td>
         </tr>
         <tr>
-            <td><a href="#">American Curl<sup>12</sup></a></td>
-            <td>United States<a href=""><sup>11</sup></a></td>
-            <td>Mutation</td>
-            <td>Semi-foreign</td>
-            <td>Semi-long</td>
-            <td>All</td>
-            <td><img src="https://ampet.vn/wp-content/uploads/2022/09/Meo-tai-cup-Scottish-Fold-1.jpg" alt=""></td>
+            <td><img src="https://product.hstatic.net/200000549467/product/z3678146360616_0a07862878f0d1e217dd2fb57d0ff11f_fcd4dfa2a8e943a09fe61657ce399ffc.jpg" alt=""></td>
+            <td>Gummy Bears</td>
+            <td>$6 per bag</td>
         </tr>
         <tr>
-            <td><a href="#">American Ringtail</a></td>
-            <td>United States<a href=""><sup>11</sup></a></td>
-            <td>Mutation</td>
-            <td>Foreign</td>
-            <td>Semi-long</td>
-            <td>All</td>
-            <td><img src="https://shopvatnuoi.vn/wp-content/uploads/2024/08/American-Bobtail-%E2%80%93-Meo-my-duoi-cut-shopvatnuoivn-nai-pet-c0.jpg" alt=""></td>
+            <td><img src="https://hatgiongphuongnam.com/asset/upload/image/hat-giong-sup-lo-xanh-1.7_.jpg?v=20190410" alt=""></td>
+            <td>Broccoli</td>
+            <td>$3 a head</td>
+        </tr>
+    </table>
+    <hr>
+    <h1>Bai 10:</h1>
+    <h2 >QUAN LY SINH VIEN</h2>  
+    <table border="1" style="width: 40%;">
+        <tr>
+            <th>ID</th>
+            <th>Ho va ten</th>
+            <th>Diem</th>
+            <th>Xep loai</th>
         </tr>
         <tr>
-            <td><a href="#">American Shorthair</a></td>
-            <td>United States<a href=""><sup>11</sup></a></td>
-            <td>Natural</td>
-            <td>Cobby</td>
-            <td>Short</td>
-            <td>All</td>
-            <td><img src="https://shopvatnuoi.vn/wp-content/uploads/2024/08/American-Shorthair-Meo-my-shopvatnuoivn-nai-pet-c2.jpg" alt=""></td>
+            <th colspan="4">Khoa A</th>
         </tr>
         <tr>
-            <td><a href="#">American Wirehair</a></td>
-            <td>United States<a href=""><sup>11</sup></a></td>
-            <td>Mutation</td>
-            <td>Normal</td>
-            <td>Rex</td>
-            <td>All</td>
-            <td><img src="https://giuchomeo.com/wp-content/uploads/american-wirehair-1285494426-2000-f983b134b51c4f46a3f50e26fb878abe.jpg" alt=""></td>
+            <td class="textt">1</td>
+            <td class="textt">Tran Xuan Son</td>
+            <td class="textt">7</td>
+            <td class="textt">Kha</td>
+        </tr>
+        <tr>
+            <td class="textt">2</td>
+            <td class="textt">Nguyen Xuan Son</td>
+            <td class="textt">8</td>
+        </tr>
+        <tr>
+            <th colspan="4">Khoa B</th>
+        </tr>
+        <tr>
+            <td class="textt">3</td>
+            <td class="textt">Trinh Xuan Son</td>
+            <td class="textt">5</td>
+            <td class="textt">Trung binh</td>
+        </tr>
+        <tr>
+            <td class="textt">4</td>
+            <td class="textt">Hoang Xuan Son</td>
+            <td class="textt">10</td>
+            <td class="textt">Gioi</td>
+        </tr>
+        <tr>
+            <th colspan="2">TONG CONG</th>
+            <td class="textt">7.5</td>
+            <td class="textt">Kha</td>
         </tr>
     </table>
 </body>
