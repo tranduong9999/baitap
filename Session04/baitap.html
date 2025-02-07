@@ -9,6 +9,9 @@
     table,th,td {
         border: 1px solid black;
     }
+    table {
+        border-spacing: 30px;
+    }
 </style>
 <body>
     <h1>Bai 1:</h1>
@@ -37,7 +40,7 @@
     <p>HTML la buoc dau tien trong hanh trinh hoc phat trine web. Hieu ro va su dung thanh thao HTML se giup ban xay dung nen tang vung chac de hoc cac cong nghe web khac</p>
     <hr>
     <h1>Bai 4:</h1>
-    <table style="width: 100%;">
+    <table >
         <tr>
             <th>Ten</th>
             <th>Tuoi</th>
@@ -61,7 +64,7 @@
     </table>
     <hr>
     <h1>Bai 5 :</h1>
-    <table style="width: 100%;">
+    <table>
         <tr>
             <th>Thang</th>
             <th colspan="2">Ty le don hang theo thang</th>
@@ -84,7 +87,7 @@
     </table>
     <hr>
     <h1>Bai 6:</h1>
-    <table style="width: 100%;">
+    <table>
         <tr>
             <th>Loai san pham</th>
             <th>Ten san pham</th>
@@ -119,9 +122,10 @@
             <option value="Thailand">Thailand</option>
             <option value="Japan">Japan</option>
         </select>
+        <br>
         <label for="text">Subject</label>
         <textarea name="text" id=""></textarea><br>
-        <button type="submit">Submit</button>
+        <button style="background-color: rgb(9, 169, 9); color: white;" type="submit">Submit</button>
     </form>
     <hr>
     <h1>Bai 8:</h1>
@@ -140,23 +144,21 @@
         <input type="email"><br>
     </form>
     <label for="address">Dia chi:</label>
-    <textarea name="address" id=""></textarea>
+    <textarea name="address" id=""></textarea><br>
     <button type="submit">Dat hang</button>
     <hr>
     <h1>Bai 9:</h1>
     <h2>Tim kiem san pham</h2>
     <form action="">
         <label for="text">Tu khoa san pham</label><br>
-        <input type="text"><br>
+        <input type="text"><br><br>
         <label for="text">Loai san pham:</label><br>
     </form>
-    <select name="
-    electronics" id="
-    electronics">
+    <select name="electronics" id="electronics">
     <option value="dt">Dien tu</option>
     <option value="bl">Ban la</option>
     <option value="cs">Cuc sac</option>
-    </select><br>
+    </select><br><br>
     <button type="submit">Tim kiem</button>
     <hr>
     <h1>Bai 10:</h1>
