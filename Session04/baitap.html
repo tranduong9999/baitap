@@ -9,9 +9,7 @@
     table,th,td {
         border: 1px solid black;
     }
-    table {
-        border-spacing: 30px;
-    }
+    
 </style>
 <body>
     <h1>Bai 1:</h1>
@@ -21,8 +19,12 @@
     <hr>
     <h1>Bai 2:</h1>
     <h1>Danh sach anh cua ban</h1>
-    <img src="https://i.pinimg.com/564x/d9/37/2e/d9372e51dc1205a9dd02ffd5e4f9ddd5.jpg" alt="">
-    <img src="https://i.pinimg.com/736x/90/27/69/902769ebcb44841fd292a857a8bb20b1.jpg" alt="">
+    <table>
+        <img width="552px" src="https://demoda.vn/wp-content/uploads/2022/01/anh-shin-cau-be-but-chi.jpg" alt="">
+        <img src="https://i.pinimg.com/736x/90/27/69/902769ebcb44841fd292a857a8bb20b1.jpg" alt=""><br>
+        <img width="552px" src="https://th.bing.com/th/id/OIP.S-wjzdoDj0aPKbR2dvGR5AHaNK?rs=1&pid=ImgDetMain" alt="">
+        <img width="552px" src="https://freenice.net/wp-content/uploads/2021/09/hinh-nen-cu-Shin-ngo-nghinh-cho-iphone-337x600.jpg" alt="">
+    </table>
     <hr>
     <h1>Bai 3:</h1>
     <h2>Tam quan trong cua HTML trong phat trien Web</h2>
@@ -110,22 +112,16 @@
     </table>
     <h1>Bai 7:</h1>
     <form action="">
-        <label for="name">First Name</label>
-        <input type="text" id="" ><br>
-        <label for="name">Last Name</label>
-        <input type="text" id="" ><br>
-        <label for="country">Country </label>
-        <select name="country" id="country">
-            <option value="USA">USA</option>
-            <option value="VN">Viet Nam</option>
-            <option value="Korea">Korea</option>
-            <option value="Thailand">Thailand</option>
-            <option value="Japan">Japan</option>
+        <h2>Tim kiem san pham</h2> <br>
+        <label for="name">Tu khoa tim kiem</label><br>
+        <input type="text" id="" ><br> <br>
+        <label for="name">Loai san pham</label><br>
+        <select name="abc" id="abc">
+            <option value="DT">Dien tu</option>
+            <option value="DGD">Do gia dung</option>
         </select>
         <br>
-        <label for="text">Subject</label>
-        <textarea name="text" id=""></textarea><br>
-        <button style="background-color: rgb(9, 169, 9); color: white;" type="submit">Submit</button>
+        <button type="submit">Tim kiem</button>
     </form>
     <hr>
     <h1>Bai 8:</h1>
@@ -148,38 +144,95 @@
     <button type="submit">Dat hang</button>
     <hr>
     <h1>Bai 9:</h1>
-    <h2>Tim kiem san pham</h2>
+    <h1>CatPhotoApp</h1>
+    <h3>Cat Photos</h3>
+    <p>Everyone loves <ins style="color: blue;">cute cats</ins> online!</p>
+    <p>See more <ins style="color: blue;">cat photos</ins> in our gallery</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWgV7RXCxh91LoV8KN_lAwHz3Vq4Jvd0kYjg&s" alt="">
+    <h1>Cat Lists</h1>
+    <h2>Things cats love:</h2>
+    <ul>
+        <li>cat nip</li>
+        <li>laser pointers</li>
+        <li>lasagna</li>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5ttEpsXrcn_1-y0j8YpsfEV5dHLktMYortA&s" alt=""><br>
+        Cats love lasagna.
+    </ul>
+    <h2>Top 3 things cats hate:</h2>
+    <ul>
+        <p>1.flea treatment</p>
+        <p>2.thunder</p>
+        <p>3.other cats</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpyD6WW25Cc0TwMpYp1_f-8qDquLoO-wD0Rg&s" alt=""><br>Cats hate other cats
+    </ul>
+    <table border="1">
+        <tr>
+            <th>Breed</th>
+            <th>Location of origin</th>
+            <th>Type</th>
+            <th>Body type</th>
+            <th>Coat type and length</th>
+            <th>Coat pattern</th>
+            <th>Image</th>
+        </tr>
+        <tr>
+            <td style="color: blue;"> <ins>Absyssinian</ins></td>
+            <td>Unspecified, but somewhere in Afro-Asia, likely <ins style="color: blue;">Ethiopia <sup>[9]</sup></ins></td>
+            <td>Natural</td>
+            <td>Semi-foreign</td>
+            <td>Short</td>
+            <td>Ticked baby</td>
+            <td><img width="100px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Gustav_chocolate.jpg/640px-Gustav_chocolate.jpg" alt=""></td>
+        </tr>
+        <tr>
+            <td style="color: blue;"><ins>Aegean</ins> </td>
+            <td>Greece </td>
+            <td>Natural </td>
+            <td>Moderate </td>
+            <td>Semi-long</td>
+            <td>Multi-color</td>
+            <td><img width="100px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMAvf0W_npSA-le-zWzyEo8Xr4WM-sSwBEaA&s" alt=""></td>
+        </tr>
+        <tr>
+            <td style="color: blue;"><ins>American Bobtail<sup>[10]</sup></ins></td>
+            <td>United States<sup style="color: blue;"><ins>[11]</ins></sup></td>
+            <td>Mutation of shortened tail</td>
+            <td>Cobby</td>
+            <td>Semi-long</td>
+            <td>All</td>
+            <td><img width="100px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/American_bobtail_2.jpg/640px-American_bobtail_2.jpg" alt=""></td>
+        </tr>
+        <tr>
+            <td style="color: blue;">American Curl<sup>[11]</sup></td>
+            <td>United States<sup style="color: blue;"><ins>[11]</ins></sup></td>
+            <td>Mutation </td>
+            <td>Semi-foreign</td>
+            <td>Semi-long</td>
+            <td>All</td>
+            <td><img width="100px" src="https://giuchomeo.com/wp-content/uploads/american-curl-full-profile-history-and-care-4705972-hero-2c9bdcfba3d84130b8eed233c46c19d3.jpg" alt=""></td>
+        </tr>
+        <tr>
+            <td style="color: blue;">American Ringtail<sup>[11]</sup></td>
+            <td>United States<sup style="color: blue;"><ins>[11]</ins></sup></td>
+            <td>Mutation</td>
+            <td>Foreign</td>
+            <td>Semi-long</td>
+            <td>All</td>
+            <td><img width="100px" src="https://giuchomeo.com/wp-content/uploads/GettyImages-925319984-36b97d913d934d229d8b0d528a7da64e.jpg" alt=""></td>
+        </tr>
+    </table>
     <form action="">
-        <label for="text">Tu khoa san pham</label><br>
-        <input type="text"><br><br>
-        <label for="text">Loai san pham:</label><br>
+        <h2>Cat Form</h2>
+        <label for="">Is your cat an indoor or outdoor cat?</label><br>
+        <input type="radio" id="indoor">indoor
+        <input type="radio" id="outdoor">Outdoor <br>
+        <label for="">What's your cat's personality?</label><br>
+        <input type="checkbox" id="love">Loving 
+        <input type="checkbox" id="lazy">Lazy 
+        <input type="checkbox" id="en">Energetic <br>
+        <input type="text" id="text" placeholder="cat photo URL">
+        <button type="submit">submit</button>
     </form>
-    <select name="electronics" id="electronics">
-    <option value="dt">Dien tu</option>
-    <option value="bl">Ban la</option>
-    <option value="cs">Cuc sac</option>
-    </select><br><br>
-    <button type="submit">Tim kiem</button>
-    <hr>
-    <h1>Bai 10:</h1>
-    <h2>Billing Address</h2>
-    <form action="">
-        <i class='fas fa-blind'></i>
-        <label for="name">Full Name</label><br>
-        <input type="text" placeholder="John M.Doe"><br>
-        <i class="fa fa-envelope"></i>
-        <label for="email">Email</label><br>
-        <input type="text" placeholder="john@example.com"><br>
-        <i class="fa fa-address-card-o"></i>
-        <label for="address">Adress</label><br>
-        <input type="address" placeholder="542 W. 15th Street"><br>
-        <i class='fas fa-city'></i>
-        <label for="city">City</label><br>
-        <input type="text" placeholder="New York"><br>
-        <label for="state">State</label><br>
-        <input type="text" placeholder="NY"><br>
-        <input type="checkbox">Shipping address same as billing <br>
-        <button style="background-color: rgb(53, 185, 53); color: white;">Coutinue to checkout</button>
-    </form>
+    <p>No Copyright - <ins style="color: blue;">rikkei.edu.vn</ins></p>
 </body>
 </html>
