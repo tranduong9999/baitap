@@ -1,0 +1,7 @@
+.container h1{
+    color: rgb(81, 81, 182);
+}
+.inset {
+    border-style: inset;
+    background-color: rgb(246, 224, 199);
+}

@@ -1,0 +1,22 @@
+span {
+    color: red;
+}
+.border {
+    border-style: solid;
+    border-color: green;
+    text-align: center;
+}
+.text {
+    color: #a35555;
+}
+.borderr{
+    color: red;
+    padding-left: 1.8em 
+}
+.check {
+    color: blue;
+}
+button {
+    color: white;
+    background-color: rgb(17, 128, 17);
+}

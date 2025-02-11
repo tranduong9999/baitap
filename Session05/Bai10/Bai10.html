@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./Bai10.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2>Billing address</h2>
+
+    <form action="#">
+      <div class="row">
+        <div class="column">
+          <label for="firstName">First name</label>
+          <input type="text" id="firstName" name="firstName" required>
+        </div>
+        <div class="column">
+          <label for="lastName">Last name</label>
+          <input type="text" id="lastName" name="lastName" required>
+        </div>
+      </div>
+
+      <label for="username">Username</label>
+      <div class="input-icon">
+        <span>@</span>
+        <input type="text" id="username" name="username" placeholder="Username" required>
+      </div>
+
+      <label for="email">Email (Optional)</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com">
+
+      <label for="address">Address</label>
+      <input type="text" id="address" name="address" placeholder="1234 Main St" required>
+
+      <label for="address2">Address 2 (Optional)</label>
+      <input type="text" id="address2" name="address2" placeholder="Apartment or suite">
+
+      <div class="row">
+        <div class="column">
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="">Choose...</option>
+            <option value="usa">United States</option>
+            <option value="canada">Canada</option>
+          </select>
+        </div>
+        <div class="column">
+          <label for="state">State</label>
+          <select id="state" name="state">
+            <option value="">Choose...</option>
+            <option value="ca">California</option>
+            <option value="ny">New York</option>
+          </select>
+        </div>
+        <div class="column zip-column">
+          <label for="zip">Zip</label>
+          <input type="text" id="zip" name="zip">
+        </div>
+      </div>
+
+      <label>
+        <input type="checkbox"> Shipping address is the same as my billing address
+      </label>
+      <label>
+        <input type="checkbox"> Save this information for next time
+      </label>
+
+      <h2>Payment</h2>
+      <label>
+        <input type="radio" name="paymentMethod" checked> Credit card
+      </label>
+      <label>
+        <input type="radio" name="paymentMethod"> Debit card
+      </label>
+      <label>
+        <input type="radio" name="paymentMethod"> PayPal
+      </label>
+
+      <div class="row">
+        <div class="column">
+          <label for="nameOnCard">Name on card</label>
+          <input type="text" id="nameOnCard" required>
+        </div>
+        <div class="column">
+          <label for="cardNumber">Credit card number</label>
+          <input type="text" id="cardNumber" required>
+        </div>
+      </div>
+      <h5>Fullname as displayed on card</h5>
+
+      <div class="row">
+        <div class="column">
+          <label for="expiration">Expiration</label>
+          <input type="text" id="expiration" required>
+        </div>
+        <div class="column">
+          <label for="cvv">CVV</label>
+          <input type="text" id="cvv" required>
+        </div>
+      </div>
+
+      <button type="submit" class="checkout-button">Continue to checkout</button>
+    </form>
+  </div>
+</body>
+
+</html>

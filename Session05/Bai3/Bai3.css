@@ -1,0 +1,13 @@
+.container {
+    background-color: black;
+}
+h1 {
+    color: white;
+}
+img {
+    width: 300px;
+}
+p{
+    color: rgb(23, 236, 23);
+    font-style: italic;
+}

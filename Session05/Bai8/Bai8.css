@@ -1,0 +1,29 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+}
+caption {
+    text-align: center;
+}
+th {
+    background-color: blue;
+    color: white;
+}
+.color {
+    background-color: green;
+    color: white;
+}
+.colorr {
+    background-color: yellow;
+    color: black;
+}
+.colorrr {
+    background-color: red;
+    color: white;
+}
