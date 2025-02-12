@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+}
+
+header h1 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: none;
+}
+
+.intro {
+    background-color: #eaeaea;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.profile p {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    text-align: left;
+}
+
+.projects {
+    margin: 30px auto;
+    width: 80%;
+}
+
+.projects h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.project-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.project {
+    background-color: #222;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    flex: 1;
+    text-align: center;
+}
+
+footer {
+    background-color: #eaeaea;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 14px;
+    color: gray;
+}
+
+footer a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
