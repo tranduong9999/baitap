@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.package {
+    background-color: white;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.package-header {
+    background-color: #E50000;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 10px 10px 0 0;
+}
+
+.package-header img {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 50px;
+}
+
+.package-details {
+    list-style: none;
+    padding: 15px 0;
+}
+
+.package-details li {
+    font-size: 14px;
+    color: #333;
+    padding: 5px 0;
+}
+
+.highlight {
+    color: orange;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-primary {
+    background-color: #E50000;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary i {
+    margin-right: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #B30000;
+}
+
+.btn-secondary {
+    background-color: white;
+    color: #E50000;
+    border: 2px solid #E50000;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-secondary i {
+    margin-right: 5px;
+}
+
+.btn-secondary:hover {
+    background-color: #E50000;
+    color: white;
+}

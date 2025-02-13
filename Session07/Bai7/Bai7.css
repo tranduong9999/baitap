@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.container h3 {
+    font-size: 26px;
+    color: #1D1443;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 15px;
+}
+hr {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.recept {
+    font-size: 20px;
+}
+.text {
+    width: 200px;
+    height: 40px;
+    border-radius: 7%;
+    opacity: 20;
+    border: 1px solid gray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.buttons {
+    gap: 10px;
+}
+
+.btn-primary {
+    background-color: #696969;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-left: 300px;
+}
+
+.btn-primary:hover {
+    background-color: #A00115;
+}
+
+.btn-secondary {
+    background-color: rgb(41, 106, 212);
+    color: #ffffff;
+    border: 2px solid #D3D3D3;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.btn-secondary:hover {
+    background-color: #d23434;
+}
