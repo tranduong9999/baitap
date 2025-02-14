@@ -1,0 +1,38 @@
+.container {
+    display: flex; 
+    width: 50%; 
+  }
+  
+.card {
+    width: 48%; 
+    border: 1px solid #ccc; 
+    padding: 20px;
+    box-sizing: border-box; 
+    text-align: center;
+}
+  
+.date {
+    color: #888;
+    margin-bottom: 10px;
+}
+  
+.title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+  
+img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+  
+.full-story {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff;   
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border: 1px solid black;
+    cursor: pointer;
+}
