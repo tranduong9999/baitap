@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    background-color: #ffffff;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 550px;
+    background-color: #8b8b8b;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.box {
+    width: 120px;
+    height: 80px;
+    background-color: #34d258;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+}

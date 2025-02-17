@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    position: relative;
+    left: 1500px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+}
+
+.Blog {
+    position: relative;
+    left: 400px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #e0e0e0;
+}
+
+.featured-post {
+    margin-bottom: 30px;
+}
+
+.featured-post h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.featured-post h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.featured-post p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.featured-post a {
+    color: #0400ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.featured-post a:hover {
+    text-decoration: none;
+}
+
+.other-posts h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.other-posts ul {
+    list-style: none;
+    padding: 0;
+}
+
+.other-posts ul li {
+    margin-bottom: 15px;
+}
+
+.other-posts ul li a {
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+}
+
+.other-posts ul li a:hover {
+    text-decoration: none;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+}
