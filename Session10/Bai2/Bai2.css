@@ -1,8 +1,8 @@
-.back1 {
+.nav {
     display: flex;
     gap: 15px;
   }
-  .back1 .item1 {
+  .nav .item1 {
     background-color: gray;
     padding: 30px;
     border-radius: 5px;
@@ -14,18 +14,18 @@
     opacity: 0.5;
     gap: 5px;
   }
-  .back1 img {
+  .nav img {
     border-radius: 5px;
   }
-  .back1 .foo {
+  .nav .foo {
     width: auto;
     height: 205px;
   }
-  .back1 .car {
+  .nav .car {
     width: auto;
     height: 205px;
   }
-  .back1 .tab {
+  .nav .tab {
     width: auto;
     height: 15px;
   }
