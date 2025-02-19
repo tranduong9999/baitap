@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: grid;
+    padding: 20px;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "header header header"
+            "feature feature feature"
+            "signup signup signup"
+            "content content content";
+    }
+
+    .header {
+        grid-area: header;
+        background-color: #7ec8e3;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .content {
+        grid-area: content;
+        background-color: #f3c67a;
+        padding: 20px;
+    }
+
+    .feature {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .feature-1 {
+        background-color: #f4b0b0;
+    }
+
+    .feature-2 {
+        background-color: #f3b8e0;
+    }
+
+    .feature-3 {
+        background-color: #c8a7f2;
+    }
+
+    .signup {
+        grid-area: signup;
+        background-color: #c8a7f2;
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "header header header"
+            "content content content"
+            "feature feature";
+    }
+
+    .feature {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .feature-1 {
+        background-color: #f4b0b0;
+    }
+
+    .feature-2 {
+        background-color: #f3b8e0;
+    }
+
+    .feature-3 {
+        background-color: #c8a7f2;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "content"
+            "feature"
+            "feature"
+            "feature"
+            "signup";
+    }
+
+    .header, .content, .feature, .signup {
+        background-color: #f3c67a;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .header {
+        background-color: #7ec8e3;
+    }
+
+    .signup {
+        background-color: #c8a7f2;
+    }
+}
+ 
