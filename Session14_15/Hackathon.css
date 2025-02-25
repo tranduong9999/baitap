@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navigation {
+    width: 1280px;
+    height: 80px;
+    display: flex;
+    position: relative;
+    background-color: #FFFFFF;
+}
+
+.navigation p{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    width: 49px;
+    height: 30px;
+    top: 25px;
+    left: 50px;
+    position: absolute;
+}
+
+.navigation .menu {
+    width: 261px;
+    height: 28px;
+    display: flex;
+    top: 26px;
+    left: 969px;
+    position: absolute;
+    justify-content: space-around;
+}
+
+.header {
+    width: 1280px;
+    height: 624px;
+    padding: 100px;
+    gap: 10px;
+    display: flex;
+}
+
+.header .header-1 {
+    width: 1080px;
+    height: 424px;
+    gap: 24px;
+}
+
+.header .header-1 .left {
+    width: 557px;
+    height: 317px;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.header .header-1 .left .text {
+    width: 557px;
+    height: 250px;
+    gap: 40px;
+}
+
+.header .header-1 .left .text p{
+    width: 557px;
+    height: 30px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #2D2D2D;
+}
+
+.header .header-1 .left .text span {
+    width: 557px;
+    height: 180px;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 90px;
+}
+
+.header .header-1 .left p {
+    font-weight: 400;
+    font-size: 17px;
+    color: #2D2D2D;
+}
+
+.skills-section {
+    width: 1280px;
+    height: 688px;
+    padding-top: 180px;
+    padding-right: 140px;
+    padding-bottom: 180px;
+    padding-left: 140px;
+    gap: 10px;
+    background-color: #FFFFFF;
+}
+
+.skills-section .skills {
+    width: 999.7px;
+    height: 328px;
+    gap: 125px;
+    display: flex;
+}
+
+.skills-section .skills .skill {
+    width: 249.9px;
+    height: 328px;
+    gap: 56px;
+    text-align: center;
+}
+
+.skills-section .skills .skill .headline {
+    width: 249.9px;
+    height: 142px;
+    gap: 19px;
+}
+
+.skills-section .skills .skill .headline h3 {
+    font-weight: 600;
+    font-size: 27px;
+    align-items: center;
+}
+
+.skills-section .skills .skill .headline span {
+    width: 249.9px;
+    height: 81px;
+    font-weight: 400;
+    font-size: 17px;
+
+}
+
+.latest-section {
+    width: 1280px;
+    height: 1016px;
+    padding-top: 20px;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-bottom: 20px;
+    gap: 60px; 
+    background-color: #FFFFFF;  
+}
+
+.test {
+    width: 237px;
+    height: 42px;
+    font-weight: 600;
+    font-size: 32px;
+    color: #2D2D2D;
+    margin-left: 400px;
+}
+
+.latest-section .cards {
+    width: 1080px;
+    height: 874px;
+    gap: 60px;
+    margin-top: 150px;
+}
+
+.latest-section .cards .stripe-1 {
+    width: 1080px;
+    height: 407px;
+    gap: 67.5px;
+    display: flex;
+}
+
+.latest-section .cards .stripe-1 .card {
+    width: 315px;
+    height: 407px;
+    gap: 25px;
+}
+
+.latest-section .cards .stripe-1 .card .headline {
+    width: 315px;
+    height: 67px;
+    gap: 10px;
+}
+
+.latest-section .cards .stripe-1 .card .headline p{
+    width: 315px;
+    height: 30px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #2D2D2D;
+}
+
+.latest-section .cards .stripe-1 .card .headline span {
+    width: 315px;
+    height: 27px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;    
+}
+
+.latest-section .cards .stripe-2 {
+    width: 1080px;
+    height: 407px;
+    gap: 67.5px;
+    display: flex;
+}
+
+.latest-section .cards .stripe-2 .card {
+    width: 315px;
+    height: 407px;
+    gap: 25px;
+}
+
+.latest-section .cards .stripe-2 .card .headline {
+    width: 315px;
+    height: 67px;
+    gap: 10px;
+}
+
+.latest-section .cards .stripe-2 .card .headline p{
+    width: 315px;
+    height: 30px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #2D2D2D;
+}
+
+.latest-section .cards .stripe-2 .card .headline span {
+    width: 315px;
+    height: 27px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;    
+}
+
+.footer {
+    width: 1280px;
+    height: 669px;
+    padding-right: 100px;
+    padding-bottom: 70px;
+    padding-left: 100px;
+    gap: 10px;
+    background-color: #FFFFFF;
+}
+
+.footer .info {
+    width: 1080px;
+    height: 599px;
+    border-top: 2px solid #00000033;
+    padding-top: 70px;
+    gap: 70px;
+}
+
+.footer .info .footer-info {
+    width: 1080px;
+    height: 529px;
+    gap: 190px;
+    display: flex;
+}
+
+.footer .info .footer-info .contact {
+    width: 360px;
+    height: 313px;
+    gap: 60px;
+}
+
+.footer .info .footer-info .contact .text {
+    width: 360px;
+    height: 217px;
+    gap: 40px;
+}
+
+.footer .info .footer-info .contact .text h2 {
+    width: 360px;
+    height: 42px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+    color: #2D2D2D;
+}
+
+.footer .info .footer-info .contact .text span {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+}
+
+footer .info .footer-info .contact .icons {
+    width: 232px;
+    height: 36px;
+
+}
+
+.footer .info .footer-info .fields {
+    width: 530px;
+    height: 529px;
+    position: relative;
+}
+
+.footer .info .footer-info .fields .text-fields {
+    width: 530px;
+    height: 69px;
+    gap: 20px;
+}
+
+.footer .info .footer-info .fields .text-fields .input {
+    width: 530px;
+    height: 69px;
+    padding-top: 21px;
+    padding-right: 30px;
+    padding-bottom: 21px;
+    padding-left: 30px;
+    gap: 30px;
+    background-color: #F3F3F3;
+}
+
+.footer .info .footer-info .fields .text-fields .inputt {
+    width: 530px;
+    height: 231px;
+    padding-top: 21px;
+    padding-right: 30px;
+    padding-bottom: 21px;
+    padding-left: 30px;
+    gap: 30px;
+    background-color: #F3F3F3;
+}
+
+.footer .info .footer-info .fields button {
+    width: 235px;
+    height: 80px;
+    padding-top: 25px;
+    padding-right: 82px;
+    padding-bottom: 25px;
+    padding-left: 82px;
+    position: absolute;
+    bottom: 0;
+    background-color: #2D2D2D;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+    .navigation {
+        width: 375px;
+        height: 80px;
+        display: flex;
+        position: relative;
+        background-color: #FFFFFF;
+    }
+    .header {
+        width: 375px;
+        height: 692.8181762695312px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 50px;
+        padding-bottom: 60px;
+        gap: 10px;
+        display: flex;
+    }
+    .header .header-1 {
+        width: 315px;
+        height: 582.8181762695312px;
+        gap: 60px;
+    }
+}
