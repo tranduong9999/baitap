@@ -1,4 +1,4 @@
-let input = prompt("Nhap 1 chuoi:");
-let count = input.trim().split(/\s+/).length;
-
-console.log(count);
+let num1 = parseFloat(prompt("Nhập số thứ nhất:"));
+let num2 = parseFloat(prompt("Nhập số thứ hai:"));
+let randomNumber = Math.random(num1,num2)
+alert(randomNumber);

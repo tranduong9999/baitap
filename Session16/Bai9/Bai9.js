@@ -1,4 +1,4 @@
-let input = prompt("Nhập một chuỗi:");
-let output = input.replace(/\b\w/g, char => char.toUpperCase());
+let a = parseFloat(prompt("moi ban nhap do C can doi"));
+let b = (a * 9/5) + 32;
 
-console.log(output);
+console.log("do F cua ban da duoc doi sang", b);
