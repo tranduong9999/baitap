@@ -2,13 +2,10 @@ let a = prompt("nhap so dau tien");
 let b = prompt("nhap so thu hai");
 let c = prompt("nhap so thu ba");
 
-let max = a;
-
-if (max > b || max > c ) {
-    console.log("gia tri lon nhat la", max);
-} else if (b > c) {
-    console.log("gia tri lon nhat la", b);
-    
-} else if (c > b) {
-    console.log("gia tri lon nhat la",c);
+if (a > b  && a > c) {
+    console.log("so lon nhat la", a);
+} else if (b > a && b > c ) {
+    console.log("so lon nhat la", b);
+} else if (c > a && c > b) {
+    console.log("so lon nhat la", c);
 }
