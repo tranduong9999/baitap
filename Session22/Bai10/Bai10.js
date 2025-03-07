@@ -50,7 +50,7 @@ do {
                 if(!isNaN(newValue)){
                     numbers[indexEdit] = newValue;
                     console.log("Da cap nhat phan tu");
-                } else {
+                } else { 
                     console.log("So ko hop le");
                     
                 }
