@@ -13,8 +13,8 @@ function showProducts() {
 
 function addToCart(name) {
     let product = products.find(p => p[0] === name);
-    if (!product) return alert("Sản phẩm không có trong cửa hàng!");
-    if (product[1] === 0) return alert("Sản phẩm đã hết hàng!");
+    if (!product) return console.log("Sản phẩm không có trong cửa hàng!");
+    if (product[1] === 0) return console.log("Sản phẩm đã hết hàng!");
     product[1]--;
     let cartItem = cart.find(c => c[0] === name);
     cartItem ? cartItem[1]++ : cart.push([name, 1, product[2]]);
@@ -24,7 +24,7 @@ function addToCart(name) {
 function showCart() {
     if (!cart.length) return alert("Giỏ hàng trống!");
     let total = cart.reduce((sum, item) => sum + item[1] * item[2], 0);
-    alert(cart.map(i => `${i[0]} - Số lượng: ${i[1]} - Giá: ${i[2]} VNĐ`).join("\n") + `\nTổng tiền: ${total} VNĐ`);
+    console.log(cart.map(i => `${i[0]} - Số lượng: ${i[1]} - Giá: ${i[2]} VNĐ`).join("\n") + `\nTổng tiền: ${total} VNĐ`);
 }
 
 function shopping() {
