@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">username:</label><br>
+    <input type="text" id="username"><br>
+    <label for="">password:</label><br>
+    <input type="text" id="password"><br>
+    <button id="loginbutton">login</button>
+
+    <script>
+        let usernameCorrect = 'huanrose@gmail.com';
+        let passwordCorrect = '123456';
+        
+        let usernamee = document.getElementById('username');
+        let passwordd = document.getElementById('password');
+        let loginInput = document.getElementById('loginbutton');
+
+        loginInput.onclick = function () {
+            let usernameInput = usernamee.value;
+            let passwordInput = passwordd.value;
+
+            if (usernameInput === usernameCorrect && passwordInput === passwordCorrect) {
+                console.log("Dang nhap thanh cong");
+            } else {
+                console.log("Dang nhap that bai")
+            }
+        }
+    </script>
+</body>
+</html>

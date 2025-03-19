@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="openmodalbutton">Open Modal</button>
+    <div id="Modal" style="width: 500px; height: 80px; position: fixed; left: 10%; border:1px solid #ccc; border-radius: 8px; display: none;">
+        <span id="closemodal" style="position: absolute; top: 5px; right: 10px;">&times;</span>
+        <p style="position: absolute; left: 20px;
+        top: 12px;">Some text in the Modal</p>
+    </div>
+
+    <script>
+        let openButton = document.getElementById('openmodalbutton');
+        let closeButton = document.getElementById('closemodal');
+        let modal = document.getElementById('Modal');
+
+        openButton.onclick = function(){
+            modal.style.display = 'block';
+        }
+
+        closeButton.onclick = function(){
+            modal.style.display = 'none';
+        }
+    </script>
+</body>
+</html>

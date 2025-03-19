@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="Body">
+    <p>Mouse Click</p>
+    <div id="green" style="width: 100px; height: 100px; background-color: green; margin: 20px; display: inline-block;">xanh</div>
+    <div id="red" style="width: 100px; height: 100px; background-color: red; margin: 20px; display: inline-block;">do</div>
+    <div id="purple" style="width: 100px; height: 100px; background-color: purple; margin: 20px; display: inline-block;">tim</div>
+
+    <script>
+        let Green = document.getElementById('green');
+        let Red = document.getElementById('red');
+        let Purple = document.getElementById('purple');
+        let body = document.getElementById('Body')
+
+        Green.onclick = function() {
+            body.style.backgroundColor = 'green';
+        }
+
+        Red.onclick = function() {
+            body.style.backgroundColor = 'red';
+        }
+
+        Purple.onclick = function() {
+            body.style.backgroundColor = 'purple';
+        }
+    </script>
+</body>
+</html>
