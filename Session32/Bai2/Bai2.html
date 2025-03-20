@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="changecount()">Bam vao toi</button>
+    <h1>So lan bam: <span id="button">0</span></h1>
+    <script>
+        let count = 0;
+        function changecount(){
+            count++;
+            document.getElementById('button').textContent =  count;
+        }
+    </script>
+</body>
+</html>

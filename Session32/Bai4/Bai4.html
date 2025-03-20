@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Nhập email của bạn:</h3>
+    <input type="text" id="email" placeholder="Nhập email" />
+    <button onclick="validateEmail()">Kiểm tra</button>
+    <p id="message"></p>
+
+    <script>
+        function validateEmail() {
+            let email = document.getElementById('email').value;
+            let message = document.getElementById('message');
+            
+            let regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(com|vn)$/;
+
+            if (regex.test(email)) {
+                message.textContent = "Email hợp lệ!";
+                message.style.color = "green";
+            } else {
+                message.textContent = "Email không hợp lệ! Email phải chứa @ và kết thúc bằng .com hoặc .vn";
+                message.style.color = "red";
+            }
+        }
+    </script>
+</body>
+</html>

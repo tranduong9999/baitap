@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .progress-container {
+            width: 100%;
+            background-color: #f3f3f3;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .progress-bar {
+            height: 30px;
+            width: 0%;
+            background-color: green;
+            text-align: center;
+            line-height: 30px;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: rgb(50, 50, 255);
+            color: white;
+        }
+
+        button:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Progress Bar with Background Effect</h2>
+
+    <div class="progress-container">
+        <div id="progress-bar" class="progress-bar">0%</div>
+    </div>
+
+    <div class="button-container">
+        <button onclick="changeProgress('increase')">Tăng tiến trình</button>
+        <button onclick="changeProgress('decrease')">Giảm tiến trình</button>
+    </div>
+
+    <script>
+        let progress = 0;
+
+        function changeProgress(action) {
+            // Kiểm tra và thay đổi tiến trình
+            if (action === 'increase' && progress < 100) {
+                progress += 10;
+            } else if (action === 'decrease' && progress > 0) {
+                progress -= 10;
+            }
+
+            // Cập nhật thanh tiến trình
+            updateProgressBar();
+        }
+
+        function updateProgressBar() {
+            // Cập nhật độ rộng của thanh tiến trình
+            let progressBar = document.getElementById('progress-bar');
+            progressBar.style.width = progress + '%';
+            progressBar.innerHTML = progress + '%';
+
+            // Cập nhật độ đậm của thanh tiến trình (dựa vào %)
+            let opacity = (progress / 100).toFixed(2);
+            progressBar.style.backgroundColor = `rgba(0, 128, 0, ${opacity})`;
+        }
+    </script>
+
+</body>
+</html>

@@ -16,3 +16,4 @@ function findCorrectEmail(param) {
 findCorrectEmail([]);
 findCorrectEmail("abc");
 findCorrectEmail(["john.doe@gmail.com", "invalidemail.com", "hello@domain.net", "space@out.com"]);
+

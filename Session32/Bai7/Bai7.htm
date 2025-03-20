@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .thumbnail {
+            width: 150px;
+            height: auto;
+            cursor: pointer;
+            margin: 10px;
+        }
+        
+        #modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.9);
+        }
+
+        #modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            height: auto;
+        }
+
+        #close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="https://th.bing.com/th/id/R.a72db4c146c5b33ebc283040f94ea314?rik=D%2fvBXEAJjdF8qA&riu=http%3a%2f%2fimages2.fanpop.com%2fimage%2fphotos%2f14100000%2fshinnosuke-shinchan-14105282-640-797.jpg&ehk=%2bX7zd5Isi8BVbwu%2fhzogKx3G%2b7l8m85a6QFFBg3E7Hg%3d&risl=&pid=ImgRaw&r=0" class="thumbnail" id="img1" alt="Image 1">
+        <img src="https://th.bing.com/th/id/OIP.vLtCKPsW_EdqojSznmkB_wHaLR?w=750&h=1141&rs=1&pid=ImgDetMain" class="thumbnail" id="img2" alt="Image 2">
+        <img src="https://th.bing.com/th/id/R.6b8898ae1d23a3941ee2ee78ba66c11c?rik=x5xTJ9EhxwbzQg&riu=http%3a%2f%2ffc03.deviantart.net%2fimages3%2fi%2f2004%2f172%2fb%2fb%2fShin_Chan_By_TroGLoD.jpg&ehk=R2IQKFolsqSuo5N%2fNdTwnQ47tMRuzIk5aiY2T2eW1DY%3d&risl=&pid=ImgRaw&r=0" class="thumbnail" id="img3" alt="Image 3">
+    </div>
+
+    <div id="modal">
+        <span id="close">&times;</span>
+        <img class="modal-content" id="modal-content">
+    </div>
+
+    <script>
+        let images = document.querySelectorAll('.thumbnail');
+        let modal = document.getElementById("modal");
+        let modalImg = document.getElementById("modal-content");
+        let closeBtn = document.getElementById("close");
+
+        images.forEach(function(image) {
+            image.onclick = function() {
+                modal.style.display = "block";
+                modalImg.src = this.src;  
+            };
+        });
+
+        closeBtn.onclick = function() {
+            modal.style.display = "none";
+        };
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        };
+    </script>
+
+</body>
+</html>
