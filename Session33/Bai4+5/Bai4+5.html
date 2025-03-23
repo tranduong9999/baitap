@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách sản phẩm</title>
+    <!-- Thêm Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4 text-center">Danh sách sản phẩm</h1>
+        
+        <!-- Ô tìm kiếm -->
+        <div class="mb-4">
+            <input type="text" id="search" class="form-control" placeholder="Tìm kiếm sản phẩm...">
+        </div>
+        
+        <!-- Danh sách sản phẩm -->
+        <div id="product-list" class="row">
+            <!-- Các sản phẩm sẽ hiển thị ở đây -->
+        </div>
+    </div>
+
+    <script>
+        // Dữ liệu sản phẩm
+        const products = [
+            {
+                id: 1,
+                name: "Laptop Dell XPS 15",
+                price: "35999999",
+                image: "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/xs9510t_cnb_00055rf110_bk.jpg",
+                description: "Laptop cao cấp với màn hình 15 inch, CPU Intel Core i7 và RAM 16GB."
+            },
+            {
+                id: 2,
+                name: "iPhone 15 Pro Max",
+                price: "29999999",
+                image: "https://media.cnn.com/api/v1/images/stellar/prod/i-phone-15-pro-phone-in-hand-at-apple-event.jpg?c=16x9",
+                description: "Điện thoại flagship của Apple với camera 48MP và chip A17 Pro."
+            },
+            {
+                id: 3,
+                name: "Samsung Galaxy S24 Ultra",
+                price: "28999999",
+                image: "https://th.bing.com/th/id/OIP.EpdEfMoxJqbh6fzJOyZ-9QHaFj?rs=1&pid=ImgDetMain",
+                description: "Điện thoại Samsung với 5-Pen và camera siêu zoom."
+            },
+            {
+                id: 4,
+                name: "Tai nghe Sony WH-1000XM5",
+                price: "11999999",
+                image: "https://cdn.nguyenkimmall.com/images/detailed/807/10052467-tai-nghe-khong-day-sony-wh-1000xm5-den-1.jpg",
+                description: "Tai nghe chống ồn tốt nhất với thời lượng pin lên đến 30 giờ."
+            },
+            {
+                id: 5,
+                name: "Apple Watch Series 9",
+                price: "11999999",
+                image: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/45-cell-alum-midnight-sport-loop-midnight-s9?wid=2000&hei=2000&fmt=jpeg&qlt=95&.v=1693322852957",
+                description: "Đồng hồ thông minh cao cấp với nhiều tính năng thể thao."
+            },
+            {
+                id: 6,
+                name: "Bose Lab Charge 5",
+                price: "15999999",
+                image: "https://th.bing.com/th/id/R.b3bf2908bac3b48e239bae9142bae9ca?rik=tNcukKtOl%2bbLxw&pid=ImgRaw&r=0&sres=1&sresct=1",
+                description: "Loa Bluetooth công suất mạnh mẽ, giúp bạn tận hưởng âm thanh rõ ràng."
+            }
+        ];
+
+        // Hàm hiển thị sản phẩm
+        function renderProducts(filteredProducts) {
+            const productList = document.getElementById('product-list');
+            productList.innerHTML = ''; // Xóa nội dung cũ
+
+            filteredProducts.forEach(product => {
+                const productHTML = `
+                    <div class="col-md-4 product-card">
+                        <div class="card">
+                            <img src="${product.image}" class="card-img-top product-img" alt="${product.name}">
+                            <div class="card-body">
+                                <h5 class="card-title">${product.name}</h5>
+                                <p class="card-text">${product.description}</p>
+                                <p class="card-text"><strong>${product.price} VND</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                productList.innerHTML += productHTML;
+            });
+        }
+
+        // Hàm lọc sản phẩm theo tìm kiếm
+        function filterProducts() {
+            const searchQuery = document.getElementById('search').value.toLowerCase();
+            const filteredProducts = products.filter(product => 
+                product.name.toLowerCase().includes(searchQuery) || 
+                product.description.toLowerCase().includes(searchQuery)
+            );
+            renderProducts(filteredProducts);
+        }
+
+        // Lắng nghe sự kiện nhập vào ô tìm kiếm
+        document.getElementById('search').addEventListener('input', filterProducts);
+
+        // Hiển thị tất cả sản phẩm ban đầu
+        renderProducts(products);
+    </script>
+
+    <!-- Thêm Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

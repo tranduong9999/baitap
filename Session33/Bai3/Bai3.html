@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <select id="category">
+            <option value="">Chọn danh mục</option>
+            <option value="Đồ ăn">Đồ ăn</option>
+            <option value="Nước">Nước</option>
+            <option value="Dụng cụ">Dụng cụ</option>
+        </select>
+        <button onclick="filterProducts()">Lọc</button>
+        <ul id="product-list">
+        </ul>
+    </div>
+
+    <script>
+        function filterProducts() {
+            const category = document.getElementById("category").value;
+            const products = [
+                { name: "Rau sạch", category: "Đồ ăn" },
+                { name: "Thịt lợn", category: "Đồ ăn" },
+                { name: "Pepsi không calo", category: "Nước" },
+                { name: "Cocacola", category: "Nước" },
+                { name: "Cò lế", category: "Dụng cụ" },
+                { name: "Tuy vit", category: "Dụng cụ" }
+            ];
+
+            const filteredProducts = category ? products.filter(product => product.category === category) : products;
+
+            const productList = document.getElementById("product-list");
+
+            productList.innerHTML = "";
+
+            filteredProducts.forEach(product => {
+                const li = document.createElement("li");
+                li.textContent = `Tên đồ ăn: ${product.name} - Danh mục: ${product.category}`;
+                productList.appendChild(li);
+            });
+        }
+    </script>
+
+</body>
+
+</html>
