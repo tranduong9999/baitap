@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ứng dụng Thời tiết</title>
-    <!-- Thêm CSS cho ứng dụng -->
+    <title>Document</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -83,12 +82,11 @@
         <button onclick="getWeather()">Tìm kiếm</button>
 
         <div class="weather-info" id="weather-info">
-            <!-- Thông tin thời tiết sẽ hiển thị ở đây -->
+
         </div>
     </div>
 
     <script>
-        // Dữ liệu thời tiết của các thành phố
         const weatherData = {
             "Hà Nội": {
                 temperature: 25,
@@ -113,12 +111,10 @@
             }
         };
 
-        // Hàm kiểm tra và hiển thị thông tin thời tiết
         function getWeather() {
             const city = document.getElementById("city").value.trim();
             const weatherInfoDiv = document.getElementById("weather-info");
 
-            // Kiểm tra xem thành phố có trong danh sách không
             if (weatherData[city]) {
                 const data = weatherData[city];
                 const weatherHTML = `

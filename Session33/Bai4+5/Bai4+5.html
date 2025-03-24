@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Danh sách sản phẩm</title>
-    <!-- Thêm Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
     
 
@@ -13,19 +12,15 @@
     <div class="container">
         <h1 class="my-4 text-center">Danh sách sản phẩm</h1>
         
-        <!-- Ô tìm kiếm -->
         <div class="mb-4">
             <input type="text" id="search" class="form-control" placeholder="Tìm kiếm sản phẩm...">
         </div>
         
-        <!-- Danh sách sản phẩm -->
         <div id="product-list" class="row">
-            <!-- Các sản phẩm sẽ hiển thị ở đây -->
         </div>
     </div>
 
     <script>
-        // Dữ liệu sản phẩm
         const products = [
             {
                 id: 1,
@@ -71,10 +66,9 @@
             }
         ];
 
-        // Hàm hiển thị sản phẩm
         function renderProducts(filteredProducts) {
             const productList = document.getElementById('product-list');
-            productList.innerHTML = ''; // Xóa nội dung cũ
+            productList.innerHTML = '';
 
             filteredProducts.forEach(product => {
                 const productHTML = `
@@ -93,7 +87,6 @@
             });
         }
 
-        // Hàm lọc sản phẩm theo tìm kiếm
         function filterProducts() {
             const searchQuery = document.getElementById('search').value.toLowerCase();
             const filteredProducts = products.filter(product => 
@@ -103,14 +96,11 @@
             renderProducts(filteredProducts);
         }
 
-        // Lắng nghe sự kiện nhập vào ô tìm kiếm
         document.getElementById('search').addEventListener('input', filterProducts);
 
-        // Hiển thị tất cả sản phẩm ban đầu
         renderProducts(products);
     </script>
 
-    <!-- Thêm Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
