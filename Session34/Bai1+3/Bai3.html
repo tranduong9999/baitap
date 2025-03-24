@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        input {
+            border-radius: 5px;
+            border: 1px solid black;
+            height: 23px;
+            width: 220px;
+        }
+        button {
+            margin-top: 10px;
+        }
+    </style>
+
+    <form id="loginForm">
+        <h1>Login</h1>
+        <label for="">Email:</label><br>
+        <input type="text" id="email" placeholder="Enter your email address"><br>
+        <label for="">Password:</label><br>
+        <input type="text" id="password" placeholder="Enter your password"><br>
+        <button type="submit">Login</button>
+    </form>
+
+    <script>
+        let users = JSON.parse(localStorage.getItem("users")) || [];
+
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            let email = document.getElementById('email').value;
+            let password = document.getElementById('password').value;
+            let user = users.find(user => user.email === email && user.password === password) 
+
+            if (user) {
+                console.log("Dang nhap thanh cong")
+            } else {
+                console.log("Dang nhap ko thanh cong")
+            }
+
+            if (email === '') {
+                console.log("Email không được để trống");
+                return;
+            }
+
+            if (password === '') {
+                console.log("Mật khẩu không được để trống");
+                return;
+            }
+        })
+    </script>
+</body>
+</html>

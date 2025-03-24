@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách nhân viên Rikkei</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        input, button {
+            padding: 8px;
+            margin: 5px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .container input {
+            width: 200px;
+        }
+
+        .container button {
+            margin-top: 10px;
+        }
+
+        .form-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .table-container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Danh sách nhân viên Rikkei</h1>
+    
+    <div class="form-container">
+        <input type="text" id="employeeName" placeholder="Tên nhân viên" required>
+        <input type="text" id="employeePosition" placeholder="Chức vụ" required>
+        <button id="addEmployeeButton">Thêm nhân viên</button>
+    </div>
+
+    <div class="table-container">
+        <table id="employeeTable">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Tên</th>
+                    <th>Chức vụ</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script>
+        let employees = JSON.parse(localStorage.getItem('employees')) || [
+            { id: 1, name: 'Nguyễn Văn A', position: 'Developer' },
+            { id: 2, name: 'Trần Thị B', position: 'Designer' },
+            { id: 3, name: 'Phạm Văn C', position: 'Project Manager' }
+        ];
+
+        function loadEmployees() {
+            const tableBody = document.querySelector('#employeeTable tbody');
+            tableBody.innerHTML = '';
+
+            employees.forEach((employee, index) => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${index + 1}</td>
+                    <td>${employee.name}</td>
+                    <td>${employee.position}</td>
+                `;
+                tableBody.appendChild(row);
+            });
+        }
+
+        document.getElementById('addEmployeeButton').addEventListener('click', function() {
+            const name = document.getElementById('employeeName').value;
+            const position = document.getElementById('employeePosition').value;
+
+            if (!name || !position) {
+                alert("Cả hai trường Tên nhân viên và Chức vụ không được để trống.");
+                return;
+            }
+
+            const newEmployee = {
+                id: Date.now(),
+                name: name,
+                position: position,
+            };
+
+            employees.push(newEmployee);
+            localStorage.setItem('employees', JSON.stringify(employees));
+            loadEmployees();  
+            document.getElementById('employeeName').value = '';
+            document.getElementById('employeePosition').value = '';
+        });
+
+        loadEmployees();
+    </script>
+
+</body>
+</html>
